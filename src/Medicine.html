@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лечение</title>
+  <style type="text/css">
+  
+    body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+  }
+
+.menu {
+  display: flex;
+  margin-top: 15px;
+}
+
+.menu li  a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu li {
+  display: block;
+  margin: 0 auto;
+  }
+
+    ul, li {
+  padding: 0;
+  }
+
+.nav {
+  padding-top: 19px;
+}
+
+  h1 {
+   text-align: center;
+   color: #333;
+   font-size: 32px;
+  }
+
+  table {
+   margin: 0 auto;
+   border-collapse: collapse;
+   width: 80%;
+  }
+
+  th, td {
+   padding: 10px;
+   border: 1px solid #ccc;
+   text-align: center;
+  }
+
+  th {
+   background-color: #f2f2f2;
+  }
+
+  td button {
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   padding: 8px 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 4px 2px;
+   cursor: pointer;
+  }
+
+  form {
+   max-width: 500px;
+   margin: 0 auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   margin-top: 50px;
+  }
+
+  label {
+   display: block;
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: #333;
+  }
+
+  input[type="text"], select, input[type="date"] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 16px;
+  }
+
+  input[type="submit"] {
+   background-color: #333;
+   color: white;
+   padding: 14px 20px;
+   margin-top: 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 18px;
+  }
+
+  
+ </style>
+</head>
+
+<body>
+  <header id="header" class="header">
+      <div class="nav">
+        <ul class="menu">
+          <li>
+            <a href="index.html"><img src="img/logo.png" alt="" style="width:50px;height:50px; border-radius: 5px;">
+            </a>
+          </li>
+          <li>
+                  <a href="registration.html">
+                     Регистрация
+                  </a>
+               </li>
+               <li>
+                  <a href="Transfer.html">
+                     Трансфер
+                  </a>
+               </li>
+          <li>
+            <a href="Medicine.html">
+              Медицина
+            </a>
+          </li>
+          <li>
+            <a href="SPA.html">
+              СПА-услуги
+            </a>
+          </li>
+          <li>
+            <a href="Rooms.html">
+              Заселение
+            </a>
+          </li>
+          <li>
+            <a href="Sights.html">
+              Достопримечательности
+            </a>
+          </li>
+          <li>
+            <a href="Food.html">
+              Меню ресторана
+            </a>
+          </li>
+          <li>
+                  <a href="Q&A.html">
+                     Обратная связь
+                  </a>
+               </li>
+        </ul>
+      </div>
+  </header>
+
+  <h1>Расписание лечебных процедур</h1>
+
+ <table>
+  <tr>
+   <th>Время</th>
+   <th>Процедура</th>
+   <th>Врач</th>
+  </tr>
+
+  <tr>
+   <td>10:00</td>
+   <td>Лечение заболеваний опорно-двигательной системы, включая артрит, артроз, сколиоз и другие</td>
+   <td>Иванова Е.А.</td>
+  </tr>
+
+  <tr>
+   <td>11:00</td>
+   <td>Курс лечения для беременных женщин и родильниц</td>
+   <td>Петрова Н.В.</td>
+  </tr>
+
+  <tr>
+   <td>12:00</td>
+   <td>Курс лечения для детей с различными заболеваниями, включая аллергии, бронхиальную астму и другие</td>
+   <td>Сидоров А.В.</td>
+  </tr>
+ </table>
+
+ <form action="submit_form.php" method="post">
+
+  <label for="name">Введите ваше имя:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="procedure">Выберите процедуру:</label>
+  <select id="procedure" name="procedure">
+   <option value=""></option>
+   <option value="ОДС">Лечение заболеваний опорно-двигательной системы, включая артрит, артроз, сколиоз и другие</option>
+   <option value="Беременность">Курс лечения для беременных женщин и родильниц</option>
+   <option value="Дети">Курс лечения для детей с различными заболеваниями, включая аллергии, бронхиальную астму и другие</option>
+  </select>
+
+  <label for="date">Выберите дату:</label>
+  <input type="date" id="date" name="date">
+
+  <input type="submit" value="Записаться">
+ </form>
+
+</body>
+</html>

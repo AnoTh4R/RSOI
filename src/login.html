@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Вход</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+  }
+
+form {
+   max-width: 500px;
+   margin: 0 auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   margin-top: 50px;
+  }
+
+input[type=text], input[type=password] {
+  width: 93%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #333;
+  color: #fff;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+.back_button{
+   background-color: #333;
+   padding: 16px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <form action="action_page.php">
+    <h1>Вход</h1>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <hr>
+    <div class="container signin">
+    <button type="submit" class="registerbtn">Войти</button>
+    <input class="back_button" type="button" onclick="history.back();" value="Назад"/>
+    </div>
+</form>
+  </body>
+</html>
